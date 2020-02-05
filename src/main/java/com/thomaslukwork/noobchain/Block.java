@@ -31,7 +31,7 @@ public class Block {
       nonce++;
       hash = calculateHash();
     }
-    System.out.println("com.thomaslukwork.noobchain.Block Mined!!! : " + hash);
+    System.out.println("Block Mined!!! : " + hash);
   }
 
   public String getHash() {
