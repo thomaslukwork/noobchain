@@ -1,3 +1,6 @@
+package com.thomaslukwork.noobchain;
+
+import com.thomaslukwork.noobchain.Block;
 import org.junit.Test;
 
 public class BlockTest {

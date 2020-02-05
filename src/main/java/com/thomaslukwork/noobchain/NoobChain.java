@@ -1,3 +1,5 @@
+package com.thomaslukwork.noobchain;
+
 import com.google.gson.GsonBuilder;
 import java.util.ArrayList;
 import java.util.List;
@@ -5,7 +7,7 @@ import java.util.List;
 public class NoobChain {
 
   public static List<Block> blockChain = new ArrayList<>();
-  public static int difficulty = 5;
+  public static int difficulty = 4;
 
   public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package com.thomaslukwork.noobchain;
+
 import java.util.Date;
 
 public class Block {
@@ -29,7 +31,7 @@ public class Block {
       nonce++;
       hash = calculateHash();
     }
-    System.out.println("Block Mined!!! : " + hash);
+    System.out.println("com.thomaslukwork.noobchain.Block Mined!!! : " + hash);
   }
 
   public String getHash() {
