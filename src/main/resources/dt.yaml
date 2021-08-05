@@ -1,0 +1,483 @@
+dataLakeExport:
+  schema: joindt
+  table: profile_reporting
+  singleFields:
+    - id: 7DayInactivity
+      type: select
+      column: dayinactivity7
+
+    - id: 10DayInactivity
+      type: select
+      column: dayinactivity10
+
+    # PersonalDetails
+    - id: FirstName
+      type: string
+      column: firstname
+
+    - id: LastName
+      type: string
+      column: lastname
+
+    - id: Gender
+      type: select
+      column: gender
+
+    - id: DOB
+      type: date
+      column: dob
+
+    - id: Mobile
+      type: string
+      column: mobile
+
+    - id: IQXID
+      type: string
+      column: iqxid
+
+    - id: StaffID
+      type: string
+      column: staffid
+
+    - id: StaffEmail
+      type: string
+      column: staffemail
+
+    - id: StaffSharedInbox
+      type: string
+      column: staffsharedinbox
+
+    - id: CandidateStatus
+      type: select
+      column: candidatestatus
+
+    - id: PreScreenSkill
+      type: select
+      column: prescreenskill
+
+    - id: PersonalDetailsComplete
+      type: select
+      column: personaldetailscomplete
+
+    # Interview
+    - id: InterviewLink
+      type: link
+      column: hirevueinterviewurl
+
+    - id: InterviewID
+      type: string
+      column: hirevueinterviewid
+
+    - id: InterviewInitiationDate
+      type: date
+      column: hirevueinterviewinitiationdate
+
+    - id: InterviewStatus
+      type: select
+      column: hirevueinterviewstatus
+
+    - id: InterviewReviewer
+      type: string
+      column: hirevueinterviewreviewer
+
+    - id: InterviewReviewDate
+      type: date
+      column: hirevueinterviewreviewdate
+
+    - id: InterviewOutcome
+      type: select
+      column: hirevueinterviewoutcome
+
+    - id: VideoInterviewComplete
+      type: select
+      column: hirevueinterviewcompleted
+
+    # DBS
+    - id: DBSUpdateRegistered
+      type: select
+      column: dbsupdateregistered
+
+    - id: DBSquestion
+      type: select
+      column: dbsquestion
+
+    - id: DBSUpdateCertificateNumber
+      type: string
+      column: dbsupdatecertificatenumber
+
+    - id: DBSCertificateUpload
+      type: file
+      column: dbscertificateUpload
+
+    - id: DBSUpdateCertificate
+      type: file
+      column: dbsupdatecertificate
+
+    - id: DBSAndRightToWorkURL
+      type: link
+      column: dbsandrighttoworkurl
+
+    - id: DBSUpdateCertificateDate
+      type: date
+      column: dbsupdatecertificatedate
+
+    - id: DBSUpdateCheckDate
+      type: date
+      column: dbsupdatecheckdate
+
+    - id: DBSRecheck
+      type: select
+      column: dbsrecheckrequired
+
+    - id: DBSUpdateResult
+      type: select
+      column: dbsupdateresult
+
+    - id: DBSUpdateComplete
+      type: select
+      column: dbsupdatecompleted
+
+    - id: DBSForceSectionStatus
+      type: select
+      column: dbsforcesectionstatus
+
+    # identification-documents
+    - id: RightToWorkSelection
+      type: select
+      column: righttoworkselection
+
+    - id: RightToWorkEUUKPassport
+      type: file
+      column: righttoworkeuukpassport
+
+    - id: RightToWorkNonEUPassport
+      type: file
+      column: righttoworknoneupassport
+
+    - id: RightToWorkBioVisaFront
+      type: file
+      column: righttoworkbiovisafront
+
+    - id: RightToWorkBirthCert
+      type: file
+      column: righttoworkbirthcert
+
+    - id: RightToWorkAdoptionCert
+      type: file
+      column: righttoworkadoptioncert
+
+    - id: RightToWorkHomeOffice
+      type: file
+      column: righttoworkhomeoffice
+
+    - id: RightToWorkNaturalisationCert
+      type: file
+      column: righttoworknaturalisationcert
+
+    - id: RightToWorkImmigrationStatus
+      type: file
+      column: righttoworkimmigrationstatus
+
+    - id: RightToWork2PassportVisa
+      type: file
+      column: righttowork2passportvisa
+
+    - id: RightToWork2BioVisaBack
+      type: file
+      column: righttowork2biovisaback
+
+    - id: RightToWork2NINumber
+      type: file
+      column: righttowork2ninumber
+
+    - id: RightToWork2NINumber2
+      type: file
+      column: righttowork2ninumber2
+
+    - id: RightToWork2NINumber3
+      type: file
+      column: righttowork2ninumber3
+
+    - id: RightToWork2NINumber4
+      type: file
+      column: righttowork2ninumber4
+
+    - id: RightToWork2NINumber5
+      type: file
+      column: righttowork2ninumber5
+
+    - id: ProofOfAddress1
+      type: select
+      column: proofofaddress1
+
+    - id: ProofOfAddressP45P60
+      type: file
+      column: proofofaddressp45p60
+
+    - id: ProofOfAddressBankStatement
+      type: file
+      column: proofofaddressbankstatement
+
+    - id: ProofOfAddressUKEUDrivingLicence
+      type: file
+      column: proofofaddressukeudrivinglicence
+
+    - id: ProofOfAddressMarriageCert
+      type: file
+      column: proofofaddressmarriagecert
+
+    - id: ProofOfAddressHMRCFinancialStatement
+      type: file
+      column: proofofaddresshmrcfinancialstatement
+
+    - id: ProofOfAddressCreditCardStatement
+      type: file
+      column: proofofaddresscreditcardstatement
+
+    - id: ProofOfAddressBirthCert
+      type: file
+      column: proofofaddressbirthcert
+
+    - id: ProofOfAddressCouncilTaxBill
+      type: file
+      column: proofofaddresscounciltaxbill
+
+    - id: ProofOfAddressUtilityBill
+      type: file
+      column: proofofaddressutilitybill
+
+    - id: ProofOfAddress2Select
+      type: select
+      column: proofofaddress2select
+
+    - id: ProofOfAddress2UtilityBill
+      type: file
+      column: proofofaddress2utilitybill
+
+    - id: ProofOfAddress2P45P60
+      type: file
+      column: proofofaddress2p45p60
+
+    - id: ProofOfAddress2MarriageCert
+      type: file
+      column: proofofaddress2marriagecert
+
+    - id: ProofOfAddress2HMRCFinancialStatement
+      type: file
+      column: proofofaddress2hmrcfinancialstatement
+
+    - id: ProofOfAddress2CreditCardStatement
+      type: file
+      column: proofofaddress2creditcardstatement
+
+    - id: ProofOfAddress2CouncilTaxBill
+      type: file
+      column: proofofaddress2counciltaxbill
+
+    - id: ProofOfAddress2BirthCert
+      type: file
+      column: proofofaddress2birthcert
+
+    - id: ProofOfAddress2BankStatement
+      type: file
+      column: proofofaddress2bankstatement
+
+    - id: ProofOfAddress2UKEUDrivingLicence
+      type: file
+      column: proofofaddress2ukeudrivinglicence
+
+    - id: NameChangeSelection
+      type: select
+      column: namechangeselection
+
+    - id: NameChangeDocument
+      type: file
+      column: namechangedocument
+
+    - id: PreEmploymentCheckComplete
+      type: select
+      column: preemploymentcheckcomplete
+
+    # work-history-and-qualifications
+    - id: CV
+      type: file
+      column: cv
+
+    - id: HigherEducationCertificate
+      type: file
+      column: highereducationcertificate
+
+    - id: Profbodyaccreditation
+      type: select
+      column: profbodyaccreditation
+
+    - id: Profbodymembership
+      type: select
+      column: profbodymembership
+
+    - id: OtherProfBody
+      type: string
+      column: otherprofbody
+
+    - id: WorkHistoryComplete
+      type: select
+      column: workhistorycompleted
+
+    # references
+    - id: ReferencesComplete
+      type: select
+      column: referencescomplete
+
+    # training
+    - id: Trainingonline
+      type: link
+      column: trainingonline
+
+    - id: TrainingProgress
+      type: select
+      column: trainingprogress
+
+    - id: TrainingComplete
+      type: select
+      column: trainingcomplete
+
+    # additional-documents
+    - id: PaymentMethod
+      type: select
+      column: paymentmethod
+
+    - id: CertificateOfIncorporation
+      type: file
+      column: certificateofincorporation
+
+    - id: ProofOfBusinessBankAccount
+      type: file
+      column: proofofbusinessbankaccount
+
+    - id: SignDeclarationLink
+      type: link
+      column: signdeclarationlink
+
+    - id: SignDeclarationStatus
+      type: select
+      column: signdeclarationstatus
+
+    - id: SignDeclarationFile
+      type: file
+      column: signdeclarationfile
+
+    - id: ProfessionalIndemnity
+      type: file
+      column: professionalindemnity
+
+    - id: AdditionalDocumentsComplete
+      type: select
+      column: additionaldocumentscomplete
+
+    # terms-and-conditions
+    - id: SignTCLink
+      type: link
+      column: signtclink
+
+    - id: SignTCStatus
+      type: select
+      column: signtcstatus
+
+    - id: SignTCFile
+      type: file
+      column: signtcfile
+
+    - id: ClearedForWorkComplete
+      type: select
+      column: clearedforworkcomplete
+
+  groupFields:
+    # PersonalDetails
+    - id: Address
+      fields:
+        - id: AddressLine1
+          type: string
+          column: addressline
+
+        - id: AddressLine2
+          type: string
+          column: addressline2
+
+        - id: AddressLine3
+          type: string
+          column: addressline3
+
+        - id: City
+          type: string
+          column: city
+
+        - id: Region
+          type: string
+          column: region
+
+        - id: PostCode
+          type: string
+          column: postcode
+
+    # References
+    - id: Reference
+      fields:
+        - id: RefereeName
+          type: string
+          column: refereename
+
+        - id: RefereeWorkEmailAddress
+          type: string
+          column: refereeworkemailaddress
+
+        - id: JobTitle
+          type: string
+          column: jobtitle
+
+        - id: Employer
+          type: string
+          column: employer
+
+        - id: ReferencePeriodStartDate
+          type: date
+          column: referenceperiodstartdate
+
+        - id: ReferencePeriodEndDate
+          type: date
+          column: referenceperiodenddate
+
+        - id: ReferenceVerified
+          type: bool
+          column: referenceverified
+
+    # terms-and-conditions
+    - id: NextOfKin
+      fields:
+        - id: NextOfKinFirstName
+          type: string
+          column: nextofkinfirstname
+
+        - id: NextOfKinSurName
+          type: string
+          column: nextofkinsurname
+
+        - id: NextOfKinPhone
+          type: string
+          column: nextofkinphone
+
+        - id: NextOfKinRelationship
+          type: string
+          column: nextofkinrelationship
+
+  sectionStateColumns:
+    "personal-details": "personaldetailssectionstate"
+    "interview": "interviewsectionstate"
+    "dbs": "dbssectionstate"
+    "identification-documents": "identificationdocumentssectionstate"
+    "work-history-and-qualifications": "workhistoryandqualificationssectionstate"
+    "references": "referencessectionstate"
+    "training": "trainingsectionstate"
+    "additional-documents": "additionaldocumentssectionstate"
+    "terms-and-conditions": "termsandconditionssectionstate"
+
+
